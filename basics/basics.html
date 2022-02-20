@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <title>Basics of Tailwind CSS</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -12,8 +13,8 @@
     <!-- Spacing -->
     <div class="p-20">
 
-        <h2 class="mb-4">Spacing Section</h2>
-        <p class="mb-4">Tailwind helps space things out with margin and padding.</p>
+        <h2 class="mb-4 text-5xl text-green-400">Spacing Section</h2>
+        <p class="mb-4 text-green-500 text-lg">Tailwind helps space things out with margin and padding.</p>
 
         <button class="mr-3 py-2 px-4 bg-gray-200 rounded-lg">Learn More</button>
         <button class="py-2 px-8 bg-gray-200 rounded-lg">Sign Up</button>
@@ -23,7 +24,11 @@
     <!-- Box Properties: Background, Border (incl rounding), Shadows -->
     <div class="p-20 bg-teal-200">
         <h2 class="mb-4">Box Properties</h2>
-        <div class="p-10 bg-gray-100 border border-gray-200 rounded-lg shadow-2xl">I am a box</div>
+        <div
+            class="p-10 bg-yellow-100 border border-gray-200 font-bold text-center uppercase tracking-widest rounded-lg shadow-2xl">
+            I
+            am a box
+        </div>
     </div>
 
     <!-- Sizing & Numbering -->
@@ -40,7 +45,7 @@
     <!-- Typography -->
     <div class="p-20 text-gray-800 leading-relaxed text-lg">
         <h2 class="mb-2 text-4xl text-gray-500 font-bold tracking-wide">Learning Tailwind is Fun!</h2>
-        <h3 class="mb-8 text-2xl text-gray-600">More fun than I expected!</h3>
+        <h3 class="mb-8 text-2xl text-orange-500">More fun than I expected!</h3>
         <p class="mb-8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat at nisi ab. Ex
             optio cum
             nulla assumenda
@@ -59,7 +64,7 @@
         <div
             class="p-4 rounded-lg bg-teal-100 text-teal-900 hover:bg-teal-700 hover:text-teal-100 transform hover:scale-x-105 transition duration-300">
             i am a box</div>
-        <div class="p-4 rounded-lg bg-teal-200 text-teal-900">i am a box</div>
+        <div class="p-4 rounded-lg bg-teal-200 text-teal-900 hover:animate-bounce">i am a box</div>
         <div class="p-4 rounded-lg bg-teal-300">i am a box</div>
         <div class="p-4 rounded-lg bg-teal-400">i am a box</div>
         <div class="p-4 rounded-lg bg-teal-500 text-teal-100">i am a box</div>
