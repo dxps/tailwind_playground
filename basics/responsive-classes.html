@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Layout of Tailwind CSS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <div class="min-h-screen bg-gray-300 p-10 lg:p-20">
+
+        <h2 class="text-4xl text-black md:text-5xl lg:text-6xl md:text-purple-500 lg:text-blue-500 xl:text-teal-500">
+            Mobile First
+        </h2>
+
+        <!-- Stacking vs Side by Side -->
+
+        <div class="md:flex md:space-x-12">
+            <div class="p-10 bg-white mt-10 md:w-1/2">on Mobile, we stack</div>
+            <div class="p-10 bg-white mt-10 md:w-1/2">on Desktop, we are side by side</div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
