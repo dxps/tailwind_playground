@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Flexbox of Tailwind CSS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <!-- Centering -->
+
+    <div class="bg-green-200 h-64 flex justify-center items-center">
+
+        <h2 class="text-4xl text-green-600">Centered</h2>
+
+    </div>
+
+    <!-- Navigation -->
+
+    <div class="bg-gray-200 p-10 flex justify-center justify-between">
+        <div>logo</div>
+        <div>navigation</div>
+    </div>
+
+    <!-- Createing a Columns Section -->
+
+    <div class="bg-yellow-500 p-10 md:flex md:space-x-8 space-y-4 md:space-y-0">
+        <div class="flex-stretch bg-white p-2">hello</div>
+        <div class="flex-grow bg-white p-2">hello</div>
+        <div class="flex-grow bg-white p-2">hello</div>
+    </div>
+
+    <!-- Sidebar -->
+
+    <div class="bg-teal-700">
+
+        <div class="md:flex h-full items-stretch">
+            <div class="md:w-1/5 bg-orange-500 p-10">sidebar</div>
+            <div class="md:flex-grow bg-teal-500 p-10">content</div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
