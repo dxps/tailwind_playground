@@ -4,17 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TailwindCSS - Basics</title>
+    <title>TailwindCSS - Flex</title>
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/icons/favicon-32x32.png">
     <script src="../assets/tailwind/tailwind.js"></script>
 </head>
 
 <body>
 
-    <div class="sm:flex-row lg:flex items-center justify-evenly h-screen">
-        <div class="flex justify-center items-center p-8 hover:text-orange-500 border border-gray-500 rounded-lg">
-            <a href="./flex-quotes.html">Quotes</a>
-        </div>
+    <div class="grid sm:grid-col-2 md:grid-col-3 lg:grid-cols-4 items-center justify-evenly h-screen">
+        <a href="./flex-quotes.html" class="p-8 hover:bg-gray-700 hover:text-orange-500 border border-gray-500 rounded-lg">
+            Quotes
+        </a>
 
     </div>
 
