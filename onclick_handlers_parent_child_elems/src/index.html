@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="outer" class="bg-gray-300 w-full h-full absolute top-0 left-0 z-0 ">
+        Outer div
+        <div class="w-48 mr-2 bg-white rounded-lg shadow-2xl float-right">
+            <div>
+                <ul class="shadow-lg bg-white p-4 z-[1000] min-w-full w-max rounded-lg max-h-96 overflow-auto">
+                    <li class="pb-2 text-gray-400 text-sm">
+                        User Menu
+                    </li>
+                    <li class="flex py-2 text-[#333] hover:bg-gray-100 hover:text-orange-600 text-sm cursor-pointer">
+                        <span>My profile</span>
+                    </li>
+                    <li id="logout" class="flex py-2 text-[#333] hover:bg-gray-100 hover:text-orange-600 text-sm cursor-pointer">
+                        <span>Logout</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("outer").addEventListener("click", () => {
+            console.info(">>> Clicked on outer.")
+        })
+        document.getElementById("logout").addEventListener("click", (evt) => {
+            console.log(">>> Clicked on logout.");
+            evt.stopPropagation()
+        })
+    </script>
+</body>
+
+</html>
